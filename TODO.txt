@@ -1,0 +1,7 @@
+[] - Page 'Main'
+[] - Page 'About me'
+[] - page 'Contacts'
+
+[] - Two themes
+[] - Animations
+[] - Adaptive
