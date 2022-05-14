@@ -1,6 +1,9 @@
+import { FC } from 'react'
 import styles from './About.module.css'
 
-const About = () => {
+interface AboutProps {}
+
+const About: FC<AboutProps> = (props) => {
   return (
     <div className={styles.About}>
       
