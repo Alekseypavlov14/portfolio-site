@@ -6,7 +6,7 @@ interface AboutProps {}
 const About: FC<AboutProps> = (props) => {
   return (
     <div className={styles.About}>
-      
+      About Page
     </div>
   )
 }
