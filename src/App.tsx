@@ -1,4 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { Home } from './pages/Home/Home'
+import { About } from './pages/About/About'
+import { Contacts } from './pages/Contacts/Contacts'
 import './App.css'
 
 function App() {
@@ -6,9 +9,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/home' element={<div>home</div>} />
-          <Route path='/about' element={<div>about</div>} />
-          <Route path='/contacts' element={<div>contacts</div>} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contacts' element={<Contacts />} />
           <Route path='*' element={<Navigate to={'/home'} />} />
         </Routes>
       </BrowserRouter>
