@@ -14,12 +14,18 @@
 }
 
 .HeaderContainer {
-  max-width: var(--content-width);
+  width: var(--content-width);
   height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 1300px) {
+  .HeaderContainer {
+    width: 90%;
+  }
 }
 
 .Link {
