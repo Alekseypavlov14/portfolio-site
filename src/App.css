@@ -1,15 +1,19 @@
 :root {
-  --light-primary: #fff;
-  --light-second: #F9F6F7;
-  --light-medium: #FFE8D6;
-  --light-dark: #FF971D;
+  --light-primary: #ffffff;
+  --light-second: #006bd6;
+  --light-medium: #0072e5;
+  --light-dark: #005ab3;
+  --light-neutral: #eeeeee;
 
-  --dark-primary: #041C32;
-  --dark-second: #04293A;
-  --dark-medium: #064663;
-  --dark-light: #ECB365;
+  --dark-primary: #071a2f;
+  --dark-second: #001e3c;
+  --dark-medium: #0075ea;
+  --dark-light: #ffffff;
+  --dark-neutral: #ccc;
 
   --content-width: 1200px;
+
+  --animation-time: 0.3s;
 }
 
 .App {

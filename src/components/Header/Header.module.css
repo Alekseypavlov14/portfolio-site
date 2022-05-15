@@ -1,15 +1,16 @@
 .Header {
   width: 100%;
   height: 64px;
+  transition: var(--animation-time);
 }
 
 .Header.light {
-  border-bottom: 2px solid var(--light-second);
+  border-bottom: 1px solid var(--light-neutral);
   background: var(--light-primary);
 }
 
 .Header.dark {
-  border-bottom: 2px solid var(--dark-second);
+  border-bottom: 1px solid var(--dark-neutral);
   background: var(--dark-primary);
 }
 
