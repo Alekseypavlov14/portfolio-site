@@ -8,6 +8,8 @@
   --dark-second: #04293A;
   --dark-medium: #064663;
   --dark-light: #ECB365;
+
+  --content-width: 1200px;
 }
 
 .App {

@@ -1,0 +1,41 @@
+.Header {
+  width: 100%;
+  height: 64px;
+}
+
+.Header.light {
+  border-bottom: 2px solid var(--light-second);
+  background: var(--light-primary);
+}
+
+.Header.dark {
+  border-bottom: 2px solid var(--dark-second);
+  background: var(--dark-primary);
+}
+
+.HeaderContainer {
+  max-width: var(--content-width);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Link:not(:last-child) {
+  margin-right: 32px;
+}
+
+.dark .Link {
+  color: var(--dark-light);
+}
+
+.light .Link {
+  color: var(--light-dark);
+}

@@ -1,0 +1,12 @@
+.ThemeToggler {
+  font-size: 32px;
+  user-select: none;
+}
+
+.ThemeToggler.light {
+  color: var(--light-dark);
+}
+
+.ThemeToggler.dark {
+  color: var(--dark-light);
+}
