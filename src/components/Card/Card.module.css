@@ -1,0 +1,125 @@
+/* ==== Card ==== */
+
+.Card {
+  width: 300px;
+  height: 450px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Card.light {
+  border: 1px solid var(--dark-grey);
+  background: var(--light-primary);
+}
+
+.Card.dark {
+  border: 1px solid var(--dark-grey);
+  background: var(--dark-second);
+}
+
+/* ==== Name ==== */
+
+.Name {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.light .Name {
+  color: var(--light-dark);
+} 
+
+.dark .Name {
+  color: var(--dark-light);
+}
+
+/* ==== Description ==== */
+
+.Description {
+  font-size: 20px;
+  color: var(--dark-grey);
+}
+
+/* ==== Links ==== */
+
+.Links {
+  line-height: 1.6em;
+  width: 100%;
+}
+
+.Link, .Repository {
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.Word {
+  padding: 0.3em;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  background: var(--light-neutral);
+}
+
+.light .Word {
+  color: var(--light-dark);
+}
+
+.dark .Word {
+  color: var(--dark-second);
+}
+
+.Anchor {
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.light .Anchor {
+  color: var(--light-dark);
+}
+
+.dark .Anchor {
+  color: var(--dark-light);
+}
+
+/* ==== Footer ==== */
+
+.Footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Technologies {
+  max-width: 80%;
+}
+
+.Technology, .Date {
+  padding: 0.3em;
+  border-radius: 0.3em;
+  background: var(--light-neutral);
+}
+
+.Technology::before {
+  content: '#';
+}
+
+.Technology:not(:last-child) {
+  margin-right: 10px;
+}
+
+.light .Technology,
+.light .Date {
+  background: var(--light-neutral);
+  color: var(--light-dark);
+}
+
+.dark .Technology,
+.dark .Date {
+  background: var(--light-neutral);
+  color: var(--dark-second);
+}
