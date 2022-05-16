@@ -15,9 +15,11 @@ const Home: FC<HomeProps> = (props) => {
   return (
     <div className={cn(styles.Home, styles[theme])}>
       <div className={styles.HomeContainer}>
-        {projects.map((project, index) => (
-          <Card {...project} key={index} />
-        ))}
+        <div className={styles.Projects}>
+          {projects.map((project, index) => (
+            <Card {...project} key={index} />
+          ))}
+        </div>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 .Home {
   width: 100%;
-  height: 100%;
+  height: fit-content;
   padding-top: 20px;
 }
 
@@ -21,4 +21,14 @@
   .HomeContainer {
     width: 90%;
   }
+}
+
+.Projects {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 20px;
 }

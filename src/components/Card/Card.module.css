@@ -1,8 +1,8 @@
-/* ==== Card ==== */
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 .Card {
-  width: 300px;
-  height: 450px;
+  width: 280px;
+  height: fit-content;
   border: 1px solid black;
   border-radius: 30px;
   padding: 20px;
@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
 }
 
 .Card.light {
@@ -25,6 +27,7 @@
 /* ==== Name ==== */
 
 .Name {
+  text-align: center;
   font-size: 32px;
   font-weight: bold;
 }
@@ -41,7 +44,9 @@
 
 .Description {
   font-size: 20px;
+  margin-top: 10px;
   color: var(--dark-grey);
+  text-align: center;
 }
 
 /* ==== Links ==== */
@@ -49,6 +54,7 @@
 .Links {
   line-height: 1.6em;
   width: 100%;
+  margin-top: 20px;
 }
 
 .Link, .Repository {
@@ -60,15 +66,16 @@
   padding: 0.3em;
   border-radius: 0.3rem;
   font-weight: bold;
-  background: var(--light-neutral);
 }
 
 .light .Word {
   color: var(--light-dark);
+  background: var(--light-neutral);
 }
 
 .dark .Word {
-  color: var(--dark-second);
+  color: var(--dark-light);
+  background: var(--dark-medium);
 }
 
 .Anchor {
@@ -90,12 +97,20 @@
 
 .Footer {
   width: 100%;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
 
 .Technologies {
-  max-width: 80%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Date {
+  align-self: end;
 }
 
 .Technology, .Date {
@@ -108,10 +123,6 @@
   content: '#';
 }
 
-.Technology:not(:last-child) {
-  margin-right: 10px;
-}
-
 .light .Technology,
 .light .Date {
   background: var(--light-neutral);
@@ -120,6 +131,12 @@
 
 .dark .Technology,
 .dark .Date {
-  background: var(--light-neutral);
-  color: var(--dark-second);
+  color: var(--dark-light);
+  background: var(--dark-medium);
+}
+
+@media (max-width: 400px) {
+  .Card {
+    width: 60%;
+  }
 }

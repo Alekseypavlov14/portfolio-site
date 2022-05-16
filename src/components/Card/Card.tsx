@@ -65,9 +65,9 @@ const Card: FC<CardProps> = ({
       <div className={styles.Footer}>
         <div className={styles.Technologies}>
           {technologies.map((technology, index) => (
-            <span className={styles.Technology} key={index}>
+            <div className={styles.Technology} key={index}>
               {technology}
-            </span>
+            </div>
           ))}
         </div>
 

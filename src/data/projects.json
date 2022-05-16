@@ -9,5 +9,70 @@
     "link": "http://www.youtube.com",
     "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
     "date": "21.09.21"
+  },
+  {
+    "name": "Project",
+    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JS",
+      "Gulp",
+      "Webpack"
+    ],
+    "link": "http://www.youtube.com",
+    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
+    "date": "21.09.21"
+  },
+  {
+    "name": "A+ Studio",
+    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
+    "technologies": [
+      "HTML",
+      "CSS"
+    ],
+    "link": "http://www.youtube.com",
+    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
+    "date": "21.09.21"
+  },
+  {
+    "name": "A+ Studio",
+    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
+    "technologies": [
+      "HTML",
+      "CSS"
+    ],
+    "link": "http://www.youtube.com",
+    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
+    "date": "21.09.21"
+  },
+  {
+    "name": "Project",
+    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JS",
+      "Gulp",
+      "Webpack",
+      "SASS",
+      "Redux"
+    ],
+    "link": "http://www.youtube.com",
+    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
+    "date": "21.09.21"
+  },
+  {
+    "name": "A+ Studio",
+    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Gulp",
+      "JS"
+    ],
+    "link": "http://www.youtube.com",
+    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
+    "date": "21.09.21"
   }
 ]
