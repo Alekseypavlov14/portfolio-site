@@ -1,5 +1,5 @@
-import { IProject } from './../../types/Project.interface'
-import { query } from './../../business/query/Query'
+import { IProject } from '../../types/Project.interface'
+import { query } from '../../business/query/Query'
 
 const projects: IProject[] = [
   {
