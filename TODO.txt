@@ -1,7 +1,0 @@
-1) - Page 'Main'
-2) - Page 'About me'
-3) - page 'Contacts'
-
-4) - Two themes
-5) - Animations
-6) - Adaptive

@@ -1,17 +1,11 @@
 import { FC } from 'react'
 import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
+import { IProject } from '../../types/Project.interface'
 import cn from 'classnames'
 import styles from './Card.module.css'
 
-interface CardProps {
-  name: string,
-  description: string,
-  technologies: string[],
-  link: string,
-  repository: string,
-  date: string
-}
+interface CardProps extends IProject {}
 
 const Card: FC<CardProps> = ({
   name, 
