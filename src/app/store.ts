@@ -1,9 +1,11 @@
-import { themeReducer } from './../features/theme/themeSlice';
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
+import { themeReducer } from './../features/theme/themeSlice'
+import { projectReducer } from '../features/projects/projectSlice'
 
 export const store = configureStore({
   reducer: {
-    theme: themeReducer
+    theme: themeReducer,
+    project: projectReducer
   }
 });
 

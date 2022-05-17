@@ -2,14 +2,14 @@ import { FC } from 'react'
 import { Card } from '../../components/Card/Card'
 import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
+import { projectsSelector } from '../../features/projects/projectSlice'
 import styles from './Home.module.css'
 import cn from 'classnames'
-
-import projects from './../../data/projects.json'
 
 interface HomeProps {}
 
 const Home: FC<HomeProps> = (props) => {
+  const projects = useSelector(projectsSelector)
   const theme = useSelector(themeSelector)
 
   return (
