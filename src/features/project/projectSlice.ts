@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { query } from './../../business/query/Query'
-import { IProject } from './../../types/Project.interface'
-import { RootState } from './../../app/store'
-import projects from './../../data/projects.json'
+import { query } from '../../business/query/Query'
+import { IProject } from '../../types/Project.interface'
+import { RootState } from '../../app/store'
+import projects from '../../data/projects.json'
 
 interface InitialState {
   readonly projects: IProject[],
@@ -35,5 +35,6 @@ const projectSlice = createSlice({
 
 export const projectReducer = projectSlice.reducer
 export const { sort } = projectSlice.actions
-export const projectsSelector = (state: RootState) => state.project.filteredProjects
+export const projectsSelector = (state: RootState) => state.project.projects
+export const filteredProjectsSelector = (state: RootState) => state.project.filteredProjects
 export const sortKeysSelector = (state: RootState) => state.project.SORT_KEYS
