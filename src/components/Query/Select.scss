@@ -1,0 +1,149 @@
+.select__light, .select__dark {
+  &__control {
+    background: transparent !important;
+    border: none !important;
+    padding: 0px !important;
+    box-shadow: none !important;
+  }
+
+  &__indicator {
+    cursor: pointer;
+  }
+
+  &__indicator-separator {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .select__light, .select__dark {
+    font-size: 20px;
+  }
+}
+
+.select__light {
+  &__control {
+    border: 1px solid var(--light-medium) !important;
+
+    &--is-focused {
+      border: 1px solid var(--light-second) !important;
+    }
+  }
+
+  &__multi-value {
+    background: var(--light-neutral) !important;
+    color: var(--light-dark) !important;
+
+    &__label {
+      color: var(--light-dark) !important;
+    }
+
+    &__remove {
+      cursor: pointer !important;
+      border-radius: 2px !important ;
+
+      &:hover {
+        background: var(--light-darken) !important;
+        color: var(--light-dark) !important;
+      }
+    }
+  }
+
+  &__indicator {
+    border-radius: 2px !important;
+    color: var(--light-dark) !important;
+
+    &:hover {
+      background: var(--light-neutral) !important;
+    }
+  }
+
+  &__menu {
+    background: var(--light-primary) !important;
+    color: var(--light-dark) !important;
+  }
+
+  &__option {
+    &:visited,
+    &:hover {
+      background: var(--light-neutral) !important;
+    }
+    &:active {
+      background: var(--light-darken) !important;
+    }
+  }
+
+  &:hover {
+    background: var(--light-darken) !important;
+  }
+
+  &:active {
+    background: var(--light-medium) !important;
+  }
+}
+
+.select__dark {
+  &__control {
+    border: 1px solid var(--dark-lighten) !important;
+
+    &--is-focused {
+      border: 1px solid var(--dark-lighten) !important;
+    }
+  }
+
+  &__placeholder {
+    color: var(--dark-light) !important;
+  }
+
+  &__multi-value {
+    background: var(--dark-second) !important;
+    color: var(--dark-light) !important;
+
+    &__label {
+      color: var(--dark-light) !important;
+    }
+
+    &__remove {
+      cursor: pointer !important;
+      border-radius: 2px !important;
+
+      &:hover {
+        background: var(--dark-lighten) !important;
+        color: var(--dark-light) !important;
+      }
+    }
+  }
+
+  &__indicator {
+    border-radius: 2px !important;
+
+    &:hover {
+      background: var(--dark-medium) !important;
+    }
+  }
+
+  &__menu {
+    background: var(--dark-second) !important;
+  }
+
+  &__option {
+    background: var(--dark-second) !important;
+    color: var(--dark-light) !important;
+
+    &:visited,
+    &:hover {
+      background: var(--dark-lighten) !important;
+    }
+    &:active {
+      background: var(--dark-lighten) !important;
+    }
+  }
+
+  &:hover {
+    background: var(--dark-second) !important;
+  }
+
+  &:active {
+    background: var(--dark-medium) !important;
+  }
+}
