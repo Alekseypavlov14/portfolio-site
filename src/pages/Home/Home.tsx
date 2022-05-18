@@ -9,7 +9,7 @@ import cn from 'classnames'
 
 interface HomeProps {}
 
-const Home: FC<HomeProps> = (props) => {
+const Home: FC<HomeProps> = () => {
   const projects = useSelector(filteredProjectsSelector)
   const technologies = useSelector(technologiesSelector)
   const theme = useSelector(themeSelector)

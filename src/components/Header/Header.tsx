@@ -12,7 +12,7 @@ const Header: FC<HeaderProps> = (props) => {
   const theme = useSelector(themeSelector)
 
   return (
-    <div className={cn(styles.Header, styles[theme])}>
+    <header className={cn(styles.Header, styles[theme])}>
       <div className={styles.HeaderContainer}>
         <div className={styles.Links}>
           <Link className={styles.Link} to='/'>Home</Link>
@@ -21,7 +21,7 @@ const Header: FC<HeaderProps> = (props) => {
         </div>
         <ThemeToggler />
       </div>
-    </div>
+    </header>
   )
 }
 
