@@ -24,8 +24,8 @@ const ThemeToggler: FC<ThemeTogglerProps> = (props) => {
         }}
       >
           {theme === 'light'
-          ? LIGHT_THEME_BUTTON_TEXT
-          : DARK_THEME_BUTTON_TEXT}
+          ? DARK_THEME_BUTTON_TEXT
+          : LIGHT_THEME_BUTTON_TEXT}
         </div>
     </div>
   )
