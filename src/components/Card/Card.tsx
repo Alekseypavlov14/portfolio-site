@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
 import { IProject } from '../../types/Project.interface'
+import { Description } from '../Description/Description'
 import cn from 'classnames'
 import styles from './Card.module.css'
 
@@ -13,8 +14,7 @@ const Card: FC<CardProps> = ({
   technologies, 
   link, 
   repository, 
-  date, 
-  ...props
+  date 
 }) => {
   const theme = useSelector(themeSelector)
 
@@ -24,7 +24,7 @@ const Card: FC<CardProps> = ({
         {name}
       </div>
       <div className={styles.Description}>
-        {description}
+        <Description text={description} max={100}/>
       </div>
 
       <div className={styles.Links}>

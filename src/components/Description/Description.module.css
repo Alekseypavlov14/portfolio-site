@@ -1,0 +1,18 @@
+.Description {
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--dark-grey);
+  text-align: center;
+}
+
+.MoreLink {
+  cursor: pointer;
+}
+
+.light .MoreLink {
+  color: var(--light-medium);
+}
+
+.dark .MoreLink {
+  color: var(--dark-medium);
+}
