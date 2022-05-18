@@ -1,6 +1,6 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { sort } from './../../features/project/projectSlice'
+import { filteredProjectsSelector, sort } from './../../features/project/projectSlice'
 import { themeSelector } from '../../features/theme/themeSlice'
 import cn from 'classnames'
 import Select from 'react-select'
@@ -16,11 +16,10 @@ interface QueryProps {
   options: Option[]
 }
 
-const Query: FC<QueryProps> = ({
-  options,
-  ...props
-}) => {
+const Query: FC<QueryProps> = ({ options }) => {
   const theme = useSelector(themeSelector)
+  const foundProjects = useSelector(filteredProjectsSelector)
+  const [isChosen, setChosen] = useState(false)
   const dispatch = useDispatch()
 
   return (
@@ -33,8 +32,19 @@ const Query: FC<QueryProps> = ({
         onChange={(e) => {
           const technologies = e.map((option) => option.value)
           dispatch(sort(technologies))
+
+          if (e.length !== 0) setChosen(true) 
+          else setChosen(false)
         }}
       />
+
+      {isChosen && (
+        <div className={styles.ResultAmount}>
+          {foundProjects.length === 1
+          ? `${foundProjects.length} project was found`
+          : `${foundProjects.length} projects were found`}
+        </div>
+      )}
     </div>
   )
 }

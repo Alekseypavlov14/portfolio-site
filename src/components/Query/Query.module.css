@@ -2,3 +2,17 @@
   height: fit-content;
   margin: 0px 0px 20px 0px;
 }
+
+.ResultAmount {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.light .ResultAmount {
+  color: var(--light-medium);
+}
+
+.dark .ResultAmount {
+  color: var(--dark-medium);
+}
