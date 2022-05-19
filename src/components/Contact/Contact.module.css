@@ -1,0 +1,42 @@
+.Contact {
+  width: 100%;
+  height: fit-content;
+  border-radius: 1em;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: var(--animation-time);
+}
+
+.Contact:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.light.Contact {
+  background: var(--light-primary);
+  border: 1px solid var(--light-neutral);
+  color: var(--light-dark);
+}
+
+.dark.Contact {
+  background: var(--dark-second);
+  border: 1px solid var(--dark-neutral);
+  color: var(--dark-light);
+}
+
+.Media, .ContactText {
+  line-height: 3em;
+}
+
+.Media {
+  font-weight: 600;
+}
+
+.Reference {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}

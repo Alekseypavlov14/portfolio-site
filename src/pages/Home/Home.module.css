@@ -3,6 +3,7 @@
   min-height: 100%;
   height: fit-content;
   padding: 20px 0px 40px 0px;
+  transition: var(--animation-time);
 }
 
 .light.Home {

@@ -1,6 +1,7 @@
 .Footer {
   width: 100%;
   padding: 14px;
+  transition: var(--animation-time);
 }
 
 .light.Footer {
