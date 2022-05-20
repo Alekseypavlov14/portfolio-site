@@ -24,7 +24,7 @@ test('sort the difference between years', () => {
   expect(sort.byDate(arrayToSortByYear)[0].date).toBe('21.05.22')
 })
 
-const arrayToSortByMonth = [
+const arrayToSortByMonth: IProject[] = [
   {
     name: '',
     description: '',
@@ -47,7 +47,7 @@ test('sort with difference between months', () => {
   expect(sort.byDate(arrayToSortByMonth)[0].date).toBe('21.05.21')
 })
 
-const arrayToSortByDay = [
+const arrayToSortByDay: IProject[] = [
   {
     name: '',
     description: '',
@@ -70,7 +70,7 @@ test('sort with difference between days', () => {
   expect(sort.byDate(arrayToSortByDay)[0].date).toBe('22.05.21')
 })
 
-const complicatedProjects = [
+const complicatedProjects: IProject[] = [
   {
     name: '',
     description: '',
@@ -134,7 +134,7 @@ test('complicated array', () => {
   ])
 })
 
-const priorityArray = [
+const priorityArray: IProject[] = [
   {
     name: '',
     description: '',
