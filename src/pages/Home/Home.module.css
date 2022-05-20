@@ -1,28 +1,9 @@
-.Home {
-  width: 100%;
-  min-height: 100%;
-  height: fit-content;
-  padding: 20px 0px 40px 0px;
-  transition: var(--animation-time);
-}
-
 .light.Home {
   background: var(--light-primary);
 }
 
 .dark.Home {
   background: var(--dark-primary);
-}
-
-.HomeContainer {
-  width: var(--content-width);
-  margin: 0 auto;
-}
-
-@media (max-width: 1300px) {
-  .HomeContainer {
-    width: 90%;
-  }
 }
 
 .Projects {

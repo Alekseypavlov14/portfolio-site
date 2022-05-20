@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
 import { IContact } from '../../types/Contact.interface'
+import { Link } from '../Link/Link'
 import styles from './Contact.module.css'
 import cn from 'classnames'
 
@@ -20,14 +21,11 @@ const Contact: FC<ContactProps> = ({
         {media}
       </div>
       <div className={styles.ContactText}>
-        <a
-          href={reference}
+        <Link
+          to={reference}
           className={styles.Reference}
-          target='_blank'
-          rel='noreferrer'
-        >
-          {contact}
-        </a>
+          children={contact}
+        />
       </div>
     </div>
   )

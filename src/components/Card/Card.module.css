@@ -68,17 +68,7 @@
 
 .Anchor {
   margin-left: 10px;
-  cursor: pointer;
-  text-decoration: none;
   font-weight: 600;
-}
-
-.light .Anchor {
-  color: var(--light-dark);
-}
-
-.dark .Anchor {
-  color: var(--dark-light);
 }
 
 /* ==== Footer ==== */

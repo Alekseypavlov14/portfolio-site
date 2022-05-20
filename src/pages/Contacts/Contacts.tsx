@@ -3,6 +3,7 @@ import { Contact } from '../../components/Contact/Contact'
 import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
 import styles from './Contacts.module.css'
+import element from './../../styles/Element.module.css'
 import contacts from './../../data/contacts.json'
 import cn from 'classnames'
 
@@ -12,8 +13,8 @@ const Contacts: FC<ContactsProps> = () => {
   const theme = useSelector(themeSelector)
 
   return (
-    <div className={cn(styles.Contacts, styles[theme])}>
-      <div className={styles.ContactsContainer}>
+    <div className={cn(element.Page, element[theme], styles[theme])}>
+      <div className={element.Container}>
         {contacts.map((contact, index) => (
           <Contact {...contact} key={index} />
         ))}
