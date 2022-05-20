@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
 import { filteredProjectsSelector, technologiesSelector } from '../../features/project/projectSlice'
 import { Query } from './../../components/Query/Query'
+import { sort } from '../../business/sort/Sort'
 import styles from './Home.module.css'
 import element from './../../styles/Element.module.css'
 import cn from 'classnames'
@@ -26,7 +27,7 @@ const Home: FC<HomeProps> = () => {
         <Query options={options} />
 
         <div className={styles.Projects}>
-          {projects.map((project, index) => (
+          {sort.byDate(projects).map((project, index) => (
             <Card {...project} key={index} />
           ))}
         </div>

@@ -164,3 +164,37 @@ const priorityArray: IProject[] = [
 test('priority of values', () => {
   expect(sort.byDate(priorityArray)[0].date).toBe('21.05.23')
 })
+
+const ImmutableArray: IProject[] = [
+  {
+    name: '',
+    description: '',
+    link: '',
+    repository: '',
+    date: '24.05.21',
+    technologies: ['HTML', 'JS', 'Gulp']
+  },
+  {
+    name: '',
+    description: '',
+    link: '',
+    repository: '',
+    date: '21.05.23',
+    technologies: ['HTML', 'CSS', 'Webpack']
+  },
+  {
+    name: '',
+    description: '',
+    link: '',
+    repository: '',
+    date: '24.05.21',
+    technologies: ['HTML', 'JS', 'Gulp']
+  }
+]
+
+test('immutable array', () => {
+  const sortedArray = sort.byDate(ImmutableArray)
+
+  expect(sortedArray[0].date).toBe('21.05.23')
+  expect(ImmutableArray[0].date).toBe('24.05.21')
+})
