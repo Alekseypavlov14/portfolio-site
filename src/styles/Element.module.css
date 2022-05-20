@@ -1,0 +1,27 @@
+.Page {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0px 40px 0px;
+  transition: var(--animation-time);
+  box-sizing: border-box;
+}
+
+.light.Page {
+  background: var(--light-primary);
+}
+
+.dark.Page {
+  background: var(--dark-primary);
+}
+
+.Container {
+  width: var(--content-width);
+  margin: 0 auto;
+  height: 100%;
+}
+
+@media (max-width: 1300px) {
+  .Container {
+    width: 90%;
+  }
+}
