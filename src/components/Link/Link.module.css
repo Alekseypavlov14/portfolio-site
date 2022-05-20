@@ -1,0 +1,12 @@
+.Link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.light.Link {
+  color: var(--light-dark);
+}
+
+.dark.Link {
+  color: var(--dark-light);
+}
