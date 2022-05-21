@@ -1,9 +1,9 @@
-.Link {
+.Reference {
   text-decoration: none;
   cursor: pointer;
 }
 
-.light.Link {
+.light.Reference {
   color: var(--light-dark);
 }
 

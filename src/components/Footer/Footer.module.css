@@ -36,6 +36,8 @@
 
 .Link {
   display: block;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .Link:not(:last-child) {
