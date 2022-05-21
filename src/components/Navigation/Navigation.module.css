@@ -1,0 +1,43 @@
+.Navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.Link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Link:not(:last-child) {
+  margin-right: 32px;
+}
+
+.dark .Link {
+  color: var(--dark-light);
+}
+
+.light .Link {
+  color: var(--light-dark);
+}
+
+.dark .Link:active {
+  color: var(--dark-light);
+}
+
+.light .Link:active {
+  color: var(--light-dark);
+}
+
+@media (max-width: 380px) {
+  .Links {
+    display: none;
+  }
+}
+
+@media (min-width: 381px) {
+  .Menu {
+    display: none;
+  }
+}
