@@ -1,16 +1,16 @@
 import { FC } from 'react'
 import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
-import styles from './Link.module.css'
+import styles from './Reference.module.css'
 import cn from 'classnames'
 
-interface LinkProps {
+interface ReferenceProps {
   to: string
   children?: string
   className?: string
 }
 
-const Link: FC<LinkProps> = ({
+const Reference: FC<ReferenceProps> = ({
   children,
   className,
   to
@@ -19,7 +19,7 @@ const Link: FC<LinkProps> = ({
 
   return (
     <a 
-      className={cn(styles.Link, className, styles[theme])}
+      className={cn(styles.Reference, className, styles[theme])}
       href={to}
       target='_blank'
       rel='noreferrer'
@@ -29,4 +29,4 @@ const Link: FC<LinkProps> = ({
   )
 }
 
-export { Link }
+export { Reference }

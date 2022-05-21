@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
 import { IProject } from '../../types/Project.interface'
 import { Description } from '../Description/Description'
-import { Link } from './../Link/Link'
+import { Reference } from '../Reference/Reference'
 import cn from 'classnames'
 import styles from './Card.module.css'
 
@@ -33,13 +33,13 @@ const Card: FC<CardProps> = ({
           <span className={styles.Word}>
             Link: 
           </span>
-          <Link to={link} className={styles.Anchor} />
+          <Reference to={link} className={styles.Anchor} />
         </div>
         <div className={styles.Repository}>
           <span className={styles.Word}>
             Repo: 
           </span>
-          <Link to={repository} className={styles.Anchor} />
+          <Reference to={repository} className={styles.Anchor} />
         </div>
       </div>
 

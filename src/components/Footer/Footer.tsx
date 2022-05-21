@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
 import { Link } from 'react-router-dom'
+import { Reference } from '../Reference/Reference'
 import styles from './Footer.module.css'
 import cn from 'classnames'
 
@@ -30,12 +31,11 @@ const Footer: FC<FooterProps> = () => {
             Aleksey Pavlov
           </div>
           <div className={styles.AuthorMail}>
-            <a 
+            <Reference 
               className={styles.Link} 
-              href='mailto://aleshapavlov9@gmail.com'
-            >
-              aleshapavlov9@gmail.com
-            </a>
+              to='mailto://aleshapavlov9@gmail.com'
+              children='aleshapavlov9@gmail.com'
+            />
           </div>
         </div>
       </div>
