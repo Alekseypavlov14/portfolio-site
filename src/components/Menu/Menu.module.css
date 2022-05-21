@@ -1,0 +1,83 @@
+.Menu {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+
+.light.Menu {
+  color: var(--light-dark)
+}
+
+.dark.Menu {
+  color: var(--dark-light);
+}
+
+.MenuIcon {
+  font-weight: 900;
+}
+
+.Sidebar {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transform: translateX(0px);
+  transition: 0.3s;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.light .Sidebar {
+  background: var(--light-primary);
+  border-right: 1px solid var(--light-second);
+}
+
+.dark .Sidebar {
+  background: var(--dark-primary);
+  border-right: 1px solid var(--dark-neutral);
+}
+
+.Header {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.Link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+}
+
+.Link:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.dark .Link {
+  color: var(--dark-light);
+}
+
+.light .Link {
+  color: var(--light-dark);
+}
+
+.dark .Link:active {
+  color: var(--dark-light);
+}
+
+.light .Link:active {
+  color: var(--light-dark);
+}
+
+.Hidden {
+  transform: translateX(-100%);
+  visibility: hidden;
+  opacity: 0;
+}
