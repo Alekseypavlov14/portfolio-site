@@ -1,24 +1,21 @@
 import { FC } from 'react'
 import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
 import { ThemeToggler } from '../ThemeToggler/ThemeToggler'
 import { themeSelector } from '../../features/theme/themeSlice'
-import cn from 'classnames'
+import { Navigation } from './../Navigation/Navigation'
 import styles from './Header.module.css'
+import element from './../../styles/Element.module.css'
+import cn from 'classnames'
 
 interface HeaderProps {}
 
-const Header: FC<HeaderProps> = (props) => {
+const Header: FC<HeaderProps> = () => {
   const theme = useSelector(themeSelector)
 
   return (
     <header className={cn(styles.Header, styles[theme])}>
-      <div className={styles.HeaderContainer}>
-        <div className={styles.Links}>
-          <Link className={styles.Link} to='/'>Home</Link>
-          <Link className={styles.Link} to='/about'>About</Link>
-          <Link className={styles.Link} to='/contacts'>Contacts</Link>
-        </div>
+      <div className={cn(element.Container, styles.HeaderContainer)}>
+        <Navigation />
         <ThemeToggler />
       </div>
     </header>
