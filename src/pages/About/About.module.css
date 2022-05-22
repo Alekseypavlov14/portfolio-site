@@ -1,0 +1,43 @@
+.Subtitle {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.Title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.Headline {
+  font-size: 28px;
+}
+
+.Link {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.light .Link {
+  color: var(--light-dark);
+}
+
+.dark .Link {
+  color: var(--dark-medium);
+}
+
+.Section p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 200;
+  word-spacing: 0.1em;
+  line-height: 1.4em;
+}
+
+.Section b {
+  font-weight: 500;
+}

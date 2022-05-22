@@ -1,11 +1,3 @@
-.light.Home {
-  background: var(--light-primary);
-}
-
-.dark.Home {
-  background: var(--dark-primary);
-}
-
 .Projects {
   width: 100%;
   height: fit-content;
