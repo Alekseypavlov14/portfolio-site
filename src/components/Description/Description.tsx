@@ -13,11 +13,10 @@ const Description: FC<DescriptionProps> = ({
   text, 
   max 
 }) => {
+  const MAX_TEXT_LENGTH = max
   const theme = useSelector(themeSelector)
   const [isOpened, setOpened] = useState(false)
   const toggle = () => setOpened(!isOpened)
-
-  const MAX_TEXT_LENGTH = max
 
   const isLong = useMemo(() => {
     return text.length > MAX_TEXT_LENGTH

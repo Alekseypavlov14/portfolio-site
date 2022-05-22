@@ -32,9 +32,7 @@ const Query: FC<QueryProps> = ({ options }) => {
         onChange={(e) => {
           const technologies = e.map((option) => option.value)
           dispatch(sort(technologies))
-
-          if (e.length !== 0) setChosen(true) 
-          else setChosen(false)
+          setChosen(Boolean(e.length))
         }}
       />
 
