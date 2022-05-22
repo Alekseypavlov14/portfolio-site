@@ -28,12 +28,21 @@ const Description: FC<DescriptionProps> = ({
         isLong 
         ? (
           isOpened 
-          ? <span onClick={toggle}>{text}</span> 
+          ? <span onClick={toggle}>
+              {text}
+            </span> 
           : (
             <>
-              <span>{text.slice(0, MAX_TEXT_LENGTH)}</span>
+              <span>
+                {text.slice(0, MAX_TEXT_LENGTH)}
+              </span>
               ...
-              <span className={styles.MoreLink} onClick={toggle}>more</span>
+              <span 
+                className={styles.MoreLink} 
+                onClick={toggle}
+              >
+                more
+              </span>
             </> 
           )
         ) 
