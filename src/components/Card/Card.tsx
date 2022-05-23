@@ -25,7 +25,7 @@ const Card: FC<CardProps> = ({
         {name}
       </div>
       <div className={styles.Description}>
-        <Description text={description} max={100}/>
+        <Description text={description} max={200}/>
       </div>
 
       <div className={styles.Links}>

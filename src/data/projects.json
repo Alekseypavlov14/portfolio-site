@@ -1,78 +1,38 @@
 [
   {
-    "name": "A+ Studio",
-    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
+    "name": "Portfolio",
+    "description": "The project I created as a portfolio site. It has links to all my other works. The project has a lot of nice details as different themes, project sorting and other",
     "technologies": [
-      "HTML",
+      "React",
+      "Redux",
+      "TypeScript",
       "CSS"
     ],
-    "link": "http://www.youtube.com",
-    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
-    "date": "21.09.21"
+    "link": "http://aleksey-pavlov.netlify.app",
+    "repository": "https://www.github.com/Alekseypavlov14/portfolio-site",
+    "date": "23.05.22"
   },
   {
-    "name": "Project",
-    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
+    "name": "swipe-mobile",
+    "description": "NPM package for handling swipes on mobile devices. It allows you to handle the callback for the swipe direction",
     "technologies": [
-      "HTML",
-      "CSS",
-      "JS",
-      "Gulp",
-      "Webpack"
-    ],
-    "link": "http://www.youtube.com",
-    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
-    "date": "21.09.22"
-  },
-  {
-    "name": "A+ Studio",
-    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
-    "technologies": [
-      "HTML",
-      "CSS"
-    ],
-    "link": "http://www.youtube.com",
-    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
-    "date": "21.07.21"
-  },
-  {
-    "name": "A+ Studio",
-    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
-    "technologies": [
-      "HTML",
-      "CSS"
-    ],
-    "link": "http://www.youtube.com",
-    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
-    "date": "24.09.21"
-  },
-  {
-    "name": "Project",
-    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JS",
-      "Gulp",
       "Webpack",
-      "SASS",
-      "Redux"
+      "TypeScript"
     ],
-    "link": "http://www.youtube.com",
-    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
-    "date": "19.05.23"
+    "link": "https://www.npmjs.com/package/swipe-mobile",
+    "repository": "https://github.com/Alekseypavlov14/swipe-mobile",
+    "date": "04.05.22"
   },
   {
     "name": "A+ Studio",
-    "description": "Something snfkjgkjdbvk smgndagkj sknfkjdsbgadgk sbngfdfbgs",
+    "description": "The adaptive site design. It was written to practice developing sites without UI libraries",
     "technologies": [
       "HTML",
       "CSS",
-      "Gulp",
       "JS"
     ],
-    "link": "http://www.youtube.com",
-    "repository": "https://www.github.com/Alekseypavlov14/typescript-todos",
-    "date": "21.01.21"
+    "link": "https://a-studio-adaptive.netlify.app/",
+    "repository": "https://www.github.com/Alekseypavlov14/A-Studio-adaptive-",
+    "date": "01.03.22"
   }
 ]
