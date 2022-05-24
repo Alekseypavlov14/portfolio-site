@@ -22,12 +22,24 @@
   color: var(--light-dark);
 }
 
-.dark .Link:active {
-  color: var(--dark-light);
+.ActiveLink {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.light .Link:active {
+.ActiveLink:not(:last-child) {
+  margin-right: 32px;
+}
+
+.light .ActiveLink {
   color: var(--light-dark);
+  text-decoration: underline;
+}
+
+.dark .ActiveLink {
+  color: var(--dark-light);
+  text-decoration: underline;
 }
 
 @media (max-width: 380px) {
