@@ -1,7 +1,8 @@
 import { IProject } from "../../types/Project.interface"
 
 interface ISort {
-  byDate: (projects: IProject[]) => IProject[]
+  byDate: (projects: IProject[]) => IProject[],
+  inAlphabet: (sorting: string[]) => string[]
 }
 
 class Sort implements ISort {
@@ -23,6 +24,11 @@ class Sort implements ISort {
       return day2 - day1
     })
   } 
+
+  inAlphabet(sorting: string[]) {
+    const copiedArray = sorting.map(_ => _)
+    return copiedArray.sort()
+  }
 }
 
 export const sort = new Sort()

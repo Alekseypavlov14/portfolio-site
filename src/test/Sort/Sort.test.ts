@@ -198,3 +198,13 @@ test('immutable array', () => {
   expect(sortedArray[0].date).toBe('21.05.23')
   expect(ImmutableArray[0].date).toBe('24.05.21')
 })
+
+const AlphabetArray = [
+  'fs',
+  'abs',
+  'bcs'
+]
+
+test('By Letter', () => {
+  expect(sort.inAlphabet(AlphabetArray)[0]).toBe('abs')
+})

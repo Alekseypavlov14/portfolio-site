@@ -16,10 +16,12 @@ const Home: FC<HomeProps> = () => {
   const technologies = useSelector(technologiesSelector)
   const theme = useSelector(themeSelector)
 
-  const options = technologies.map(technology => ({
-    value: technology,
-    label: technology
-  }))
+  const options = sort
+    .inAlphabet(technologies)
+    .map(technology => ({
+      value: technology,
+      label: technology
+    }))
 
   return (
     <div className={cn(element.Page, element[theme], styles[theme])}>
