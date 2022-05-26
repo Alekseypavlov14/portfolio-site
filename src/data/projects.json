@@ -34,5 +34,17 @@
     "link": "https://a-studio-adaptive.netlify.app/",
     "repository": "https://www.github.com/Alekseypavlov14/A-Studio-adaptive-",
     "date": "01.03.22"
+  },
+  {
+    "name": "DSI Technology",
+    "description": "It is an example of basic adaptive html layout. Gulp and SASS was used. My first application where Gulp was used",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "Gulp"
+    ],
+    "link": "http://dsi-it.netlify.app",
+    "repository": "https://www.github.com/Alekseypavlov14/html-layout",
+    "date": "26.05.22"
   }
 ]
