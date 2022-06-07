@@ -1,7 +1,7 @@
 [
   {
     "name": "Portfolio",
-    "description": "The project I created as a portfolio site. It has links to all my other works. The project has a lot of nice details as different themes, project sorting and other",
+    "description": "The project I created as a portfolio site. It has links to all my other works. The project has a lot of nice details like different themes, project sorting and other",
     "technologies": [
       "React",
       "Redux",
@@ -37,7 +37,7 @@
   },
   {
     "name": "DSI Technology",
-    "description": "It is an example of basic adaptive html layout. Gulp and SASS was used. My first application where Gulp was used",
+    "description": "It is an example of basic adaptive html layout. Gulp and SASS were used. My first application where Gulp was used",
     "technologies": [
       "HTML",
       "SASS",
