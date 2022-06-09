@@ -13,6 +13,17 @@
     "date": "23.05.22"
   },
   {
+    "name": "Responsive site",
+    "description": "Responsive HTML layout. Note: the links on the site are not active, only design",
+    "technologies": [
+      "Webpack",
+      "SASS"
+    ],
+    "repository": "https://github.com/Alekseypavlov14/responsive-html-layout/",
+    "link": "https://github.com/Alekseypavlov14/responsive-html-layout/",
+    "date": "02.03.22"
+  },
+  {
     "name": "swipe-mobile",
     "description": "NPM package for handling swipes on mobile devices. It allows you to handle the callback for the swipe direction",
     "technologies": [
