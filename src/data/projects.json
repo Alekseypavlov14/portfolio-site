@@ -14,7 +14,7 @@
   },
   {
     "name": "Responsive site",
-    "description": "Responsive HTML layout. Note: the links on the site are not active, only design",
+    "description": "Responsive HTML layout.",
     "technologies": [
       "Webpack",
       "SASS"
