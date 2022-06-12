@@ -57,5 +57,17 @@
     "link": "http://dsi-it.netlify.app",
     "repository": "https://www.github.com/Alekseypavlov14/html-layout",
     "date": "26.05.22"
+  },
+  {
+    "name": "Go Corona",
+    "description": "The adaptive website about coronavirus. In site, I created beautiful menu burger",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "Webpack"
+    ],
+    "link": "https://health-corona-go.netlify.app",
+    "repository": "https://www.github.com/Alekseypavlov14/go-corona",
+    "date": "12.06.22"
   }
 ]
