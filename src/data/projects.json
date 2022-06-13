@@ -14,13 +14,13 @@
   },
   {
     "name": "Responsive site",
-    "description": "Responsive HTML layout.",
+    "description": "Responsive HTML layout. The portfolio of a man",
     "technologies": [
       "Webpack",
       "SASS"
     ],
-    "repository": "https://responsive-html-layout.netlify.app",
-    "link": "https://github.com/Alekseypavlov14/responsive-html-layout/",
+    "repository": "https://github.com/Alekseypavlov14/responsive-html-layout/",
+    "link": "https://responsive-html-layout.netlify.app",
     "date": "02.03.22"
   },
   {
