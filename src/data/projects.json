@@ -13,6 +13,19 @@
     "date": "23.05.22"
   },
   {
+    "name": "UMR Group App",
+    "description": "The web application for UMR Business Group. I realized the form with counting the price which depends on options and the date",
+    "technologies": [
+      "React",
+      "Redux",
+      "TypeScript",
+      "CSS"
+    ],
+    "link": "http://umr-group.netlify.app",
+    "repository": "https://www.github.com/Alekseypavlov14/umr-group",
+    "date": "17.06.22"
+  },
+  {
     "name": "Responsive site",
     "description": "Responsive HTML layout. The portfolio of a man",
     "technologies": [
