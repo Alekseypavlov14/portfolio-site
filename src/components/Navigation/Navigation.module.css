@@ -24,6 +24,7 @@
 
 .ActiveLink {
   text-decoration: none;
+  text-decoration: underline;
   font-size: 20px;
   font-weight: 600;
 }
@@ -34,12 +35,10 @@
 
 .light .ActiveLink {
   color: var(--light-dark);
-  text-decoration: underline;
 }
 
 .dark .ActiveLink {
   color: var(--dark-light);
-  text-decoration: underline;
 }
 
 @media (max-width: 380px) {

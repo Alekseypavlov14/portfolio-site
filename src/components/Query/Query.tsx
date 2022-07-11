@@ -18,9 +18,10 @@ interface QueryProps {
 
 const Query: FC<QueryProps> = ({ options }) => {
   const theme = useSelector(themeSelector)
-  const foundProjects = useSelector(filteredProjectsSelector)
-  const [isChosen, setChosen] = useState(false)
   const dispatch = useDispatch()
+  
+  const [isChosen, setChosen] = useState(false)
+  const filteredProjects = useSelector(filteredProjectsSelector)
 
   return (
     <div className={cn(styles.Query, styles[theme])}>
@@ -38,9 +39,9 @@ const Query: FC<QueryProps> = ({ options }) => {
 
       {isChosen && (
         <div className={styles.ResultAmount}>
-          {foundProjects.length === 1
-          ? `${foundProjects.length} project was found`
-          : `${foundProjects.length} projects were found`}
+          {filteredProjects.length === 1
+          ? `${filteredProjects.length} project was found`
+          : `${filteredProjects.length} projects were found`}
         </div>
       )}
     </div>
