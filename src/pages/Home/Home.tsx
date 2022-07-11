@@ -1,10 +1,16 @@
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
+// components
 import { Card } from '../../components/Card/Card'
-import { useSelector } from 'react-redux'
-import { themeSelector } from '../../features/theme/themeSlice'
-import { filteredProjectsSelector, technologiesSelector } from '../../features/project/projectSlice'
 import { Query } from './../../components/Query/Query'
+// redux
+import { themeSelector } from '../../features/theme/themeSlice'
+import { technologiesSelector } from '../../features/project/projectSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { addProjects, filteredProjectsSelector } from '../../features/project/projectSlice'
+// business
+import { APIRequest } from '../../business/api/APIRequest'
 import { sort } from '../../business/sort/Sort'
+// styles
 import styles from './Home.module.css'
 import element from './../../styles/Element.module.css'
 import cn from 'classnames'
@@ -12,9 +18,16 @@ import cn from 'classnames'
 interface HomeProps {}
 
 const Home: FC<HomeProps> = () => {
-  const projects = useSelector(filteredProjectsSelector)
-  const technologies = useSelector(technologiesSelector)
   const theme = useSelector(themeSelector)
+  const dispatch = useDispatch()
+
+  const filteredProjects = useSelector(filteredProjectsSelector)
+  const technologies = useSelector(technologiesSelector)
+
+  useEffect(() => {
+    APIRequest('/projects')
+    .then(data => dispatch(addProjects(data.projects)))
+  }, [dispatch])
 
   const options = sort
     .inAlphabet(technologies)
@@ -29,7 +42,7 @@ const Home: FC<HomeProps> = () => {
         <Query options={options} />
 
         <div className={styles.Projects}>
-          {sort.byDate(projects).map((project, index) => (
+          {sort.byDate(filteredProjects).map((project, index) => (
             <Card {...project} key={index} />
           ))}
         </div>
