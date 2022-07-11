@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react'
+import { FC, useEffect, useState } from 'react'
 // components
 import { Card } from '../../components/Card/Card'
 import { Query } from './../../components/Query/Query'
@@ -24,9 +24,13 @@ const Home: FC<HomeProps> = () => {
   const filteredProjects = useSelector(filteredProjectsSelector)
   const technologies = useSelector(technologiesSelector)
 
+  const [loading, setLoading] = useState(false)
+
   useEffect(() => {
+    setLoading(true)
     APIRequest('/projects')
     .then(data => dispatch(addProjects(data.projects)))
+    .then(() => setLoading(false))
   }, [dispatch])
 
   const options = sort
@@ -39,6 +43,12 @@ const Home: FC<HomeProps> = () => {
   return (
     <div className={cn(element.Page, element[theme], styles[theme])}>
       <div className={element.Container}>
+        {loading && (
+          <div className={styles.Loading}>
+            loading ...
+          </div>
+        )}
+
         <Query options={options} />
 
         <div className={styles.Projects}>
