@@ -43,13 +43,13 @@ const Home: FC<HomeProps> = () => {
   return (
     <div className={cn(element.Page, element[theme], styles[theme])}>
       <div className={element.Container}>
+        <Query options={options} />
+
         {loading && (
           <div className={styles.Loading}>
             loading ...
           </div>
         )}
-
-        <Query options={options} />
 
         <div className={styles.Projects}>
           {sort.byDate(filteredProjects).map((project, index) => (
