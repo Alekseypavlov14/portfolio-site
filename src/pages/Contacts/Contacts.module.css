@@ -5,3 +5,8 @@
 .dark.Contacts {
   background: var(--dark-primary);
 }
+
+.Loading {
+  font-size: 18px;
+  text-align: center;
+}
