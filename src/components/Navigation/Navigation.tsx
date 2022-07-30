@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from '../NavLink/NavLink'
 import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
 import { Menu } from '../Menu/Menu'
@@ -14,32 +14,9 @@ const Navigation: FC<NavigationProps> = () => {
   return (
     <div className={cn(styles.Navigation, styles[theme])}>
       <div className={styles.Links}>
-        <NavLink 
-          className={({ isActive }) => (
-            isActive ? styles.ActiveLink : styles.Link
-          )} 
-          to='/'
-        >
-          Home
-        </NavLink>
-
-        <NavLink 
-          className={({ isActive }) => (
-            isActive ? styles.ActiveLink : styles.Link
-          )} 
-          to='/about'
-        >
-          About
-        </NavLink>
-
-        <NavLink 
-          className={({ isActive }) => (
-            isActive ? styles.ActiveLink : styles.Link
-          )} 
-          to='/contacts'
-        >
-          Contacts
-        </NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contacts">Contacts</NavLink>
       </div>
 
       <div className={styles.Menu}>
