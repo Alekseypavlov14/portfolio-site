@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 import { themeReducer } from './../features/theme/themeSlice'
+import { burgerReducer } from './../features/burger/burgerSlice'
 
 export const store = configureStore({
   reducer: {
-    theme: themeReducer
+    theme: themeReducer,
+    burger: burgerReducer
   }
 });
 
