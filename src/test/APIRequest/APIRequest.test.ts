@@ -1,4 +1,4 @@
-import { APIRequest } from "../../business/api/APIRequest"
+import { APIRequest } from "../../utils/APIRequest"
 
 test('APIRequest', async () => {
   const data = await APIRequest('/projects')

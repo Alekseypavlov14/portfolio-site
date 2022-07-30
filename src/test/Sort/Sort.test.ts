@@ -1,5 +1,5 @@
 import { IProject } from './../../types/Project.interface';
-import { sort } from "../../business/sort/Sort"
+import { sort } from "../../utils/Sort"
 
 const arrayToSortByYear: IProject[] = [
   {

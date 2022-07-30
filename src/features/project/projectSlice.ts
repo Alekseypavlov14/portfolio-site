@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { query } from '../../business/query/Query'
+import { query } from '../../utils/Query'
 import { IProject } from '../../types/Project.interface'
 import { RootState } from '../../app/store'
 import { getTechnologies } from './calculateInitialState'

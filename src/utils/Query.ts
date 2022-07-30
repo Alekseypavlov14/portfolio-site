@@ -1,4 +1,4 @@
-import { IProject } from './../../types/Project.interface'
+import { IProject } from '../types/Project.interface'
 
 interface IQuery {
   sort(projects: IProject[], technologies: string[]): IProject[]

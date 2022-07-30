@@ -1,5 +1,5 @@
 import { IProject } from '../../types/Project.interface'
-import { query } from '../../business/query/Query'
+import { query } from '../../utils/Query'
 
 const projects: IProject[] = [
   {
@@ -17,14 +17,16 @@ const projects: IProject[] = [
     repository: '',
     date: '',
     technologies: ['HTML', 'JS', 'Gulp']
-  },{
+  },
+  {
     name: '',
     description: '',
     link: '',
     repository: '',
     date: '',
     technologies: ['HTML', 'CSS', 'JS', 'TypeScript']
-  },{
+  },
+  {
     name: '',
     description: '',
     link: '',
@@ -43,11 +45,9 @@ const projects: IProject[] = [
 ]
 
 test('sort with less number of technologies', () => {
-  // In list we have projects with HTML and another tags
   expect(query.sort(projects, ['HTML']).length).toBe(4)
 })
 
 test('sort with more number of technologies', () => {
-  // In list we have projects with HTML, but without JS
   expect(query.sort(projects, ['HTML', 'CSS', 'JS']).length).toBe(1)
 })

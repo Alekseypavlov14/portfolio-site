@@ -1,4 +1,4 @@
-import { IProject } from "../../types/Project.interface"
+import { IProject } from "../types/Project.interface"
 
 interface ISort {
   byDate: (projects: IProject[]) => IProject[],

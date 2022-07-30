@@ -7,9 +7,9 @@ import { themeSelector } from '../../features/theme/themeSlice'
 import { technologiesSelector } from '../../features/project/projectSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { addProjects, filteredProjectsSelector } from '../../features/project/projectSlice'
-// business
-import { APIRequest } from '../../business/api/APIRequest'
-import { sort } from '../../business/sort/Sort'
+// utils
+import { APIRequest } from '../../utils/APIRequest'
+import { sort } from '../../utils/Sort'
 // styles
 import styles from './Home.module.css'
 import element from './../../styles/Element.module.css'
