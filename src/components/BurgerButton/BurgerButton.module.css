@@ -1,0 +1,54 @@
+.BurgerButton {
+  display: none;
+}
+
+@media (max-width: 827.98px) {
+  .BurgerButton {
+    display: flex;
+    position: relative;
+    flex: 0 0 30px;
+    height: 18px;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+  }
+
+  .BurgerButton::before,
+  .BurgerButton::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    transform-origin: center;
+    transition: transform 0.3s ease 0s;
+  }
+
+  .dark.BurgerButton span,
+  .dark.BurgerButton::after,
+  .dark.BurgerButton::before {
+    background: var(--dark-light);
+  }
+
+  .light.BurgerButton span,
+  .light.BurgerButton::after,
+  .light.BurgerButton::before {
+    background: var(--light-dark);
+  }
+
+  .BurgerButton span {
+    height: 2px;
+    width: 100%;
+  }
+
+  .BurgerButton.Clicked span {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .BurgerButton.Clicked::before {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .BurgerButton.Clicked::after {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
