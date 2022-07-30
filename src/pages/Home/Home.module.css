@@ -12,3 +12,21 @@
   font-size: 18px;
   text-align: center;
 }
+
+.SearchResult {
+  margin-top: 20px;
+}
+
+.ResultAmount {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.light .ResultAmount {
+  color: var(--light-medium);
+}
+
+.dark .ResultAmount {
+  color: var(--dark-medium);
+}
