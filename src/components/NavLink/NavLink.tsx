@@ -21,12 +21,12 @@ export const NavLink: FC<NavLinkProps> = ({ to, children }) => {
 
   return (
     <Link
+      to={to}
+      onClick={closeMenu}
       className={({ isActive }) => cn(
         isActive ? styles.ActiveLink : styles.Link,
         styles[theme]
       )}
-      to={to}
-      onClick={closeMenu}
     >
       {children}
     </Link>

@@ -13,7 +13,13 @@ const Navigation: FC<NavigationProps> = () => {
   const isOpened = useSelector(isMenuOpened)
 
   return (
-    <div className={cn(styles.Navigation, styles[theme], isOpened && styles.isOpened)}>
+    <div 
+      className={cn(
+        styles.Navigation, 
+        styles[theme], 
+        isOpened && styles.isOpened
+      )}
+    >
       <NavLink to="/">Home</NavLink>
       <NavLink to="/about">About</NavLink>
       <NavLink to="/contacts">Contacts</NavLink>

@@ -15,7 +15,11 @@ const BurgerButton: FC<BurgerButtonProps> = () => {
 
   return (
     <div 
-      className={cn(styles.BurgerButton, styles[theme], isOpened && styles.Clicked)}
+      className={cn(
+        styles.BurgerButton, 
+        styles[theme], 
+        isOpened && styles.Clicked
+      )}
       onClick={() => dispatch(toggle())}
     >
       <span />
