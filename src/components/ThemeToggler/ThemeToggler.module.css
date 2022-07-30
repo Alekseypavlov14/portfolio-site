@@ -1,6 +1,8 @@
 .ThemeToggler {
   font-size: 32px;
   user-select: none;
+  position: relative;
+  z-index: 5;
 }
 
 .ThemeToggler.light {

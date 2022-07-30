@@ -1,35 +1,25 @@
 .Link {
   text-decoration: none;
-  font-size: 20px;
   font-weight: 600;
 }
 
-.Link:not(:last-child) {
-  margin-right: 32px;
-}
-
-.dark .Link {
+.dark.Link {
   color: var(--dark-light);
 }
 
-.light .Link {
+.light.Link {
   color: var(--light-dark);
 }
 
 .ActiveLink {
   text-decoration: none;
-  font-size: 20px;
   font-weight: 600;
 }
 
-.ActiveLink:not(:last-child) {
-  margin-right: 32px;
-}
-
-.light .ActiveLink {
+.light.ActiveLink {
   color: rgb(221, 179, 40);
 }
 
-.dark .ActiveLink {
+.dark.ActiveLink {
   color: rgb(236, 198, 71);
 }

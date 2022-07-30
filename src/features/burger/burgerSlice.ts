@@ -21,4 +21,4 @@ const burgerSlice = createSlice({
 
 export const burgerReducer = burgerSlice.reducer
 export const { toggle } = burgerSlice.actions
-export const isBurgerOpened = (state: RootState) => state.burger.opened
+export const isMenuOpened = (state: RootState) => state.burger.opened
