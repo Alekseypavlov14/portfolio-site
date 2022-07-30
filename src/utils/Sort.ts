@@ -26,7 +26,7 @@ class Sort implements ISort {
   } 
 
   inAlphabet(sorting: string[]) {
-    const copiedArray = sorting.map(_ => _)
+    const copiedArray = [ ...sorting ]
     return copiedArray.sort()
   }
 }
