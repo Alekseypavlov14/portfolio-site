@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, Dispatch, SetStateAction } from 'react'
 import { useSelector } from 'react-redux'
 import { themeSelector } from '../../features/theme/themeSlice'
 import { IProject } from '../../types/Project.interface'
@@ -7,7 +7,9 @@ import { Reference } from '../Reference/Reference'
 import cn from 'classnames'
 import styles from './Card.module.css'
 
-interface CardProps extends IProject {}
+interface CardProps extends IProject {
+  setTechnology: Dispatch<SetStateAction<string[]>>
+}
 
 const Card: FC<CardProps> = ({
   name, 
@@ -15,7 +17,8 @@ const Card: FC<CardProps> = ({
   technologies, 
   link, 
   repository, 
-  date 
+  date,
+  setTechnology
 }) => {
   const theme = useSelector(themeSelector)
 
@@ -46,7 +49,11 @@ const Card: FC<CardProps> = ({
       <div className={styles.Footer}>
         <div className={styles.Technologies}>
           {technologies.map((technology, index) => (
-            <div className={styles.Technology} key={index}>
+            <div 
+              onClick={() => setTechnology([technology])}
+              className={styles.Technology} 
+              key={index}
+            >
               {technology}
             </div>
           ))}

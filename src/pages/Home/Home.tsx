@@ -66,7 +66,11 @@ const Home: FC<HomeProps> = () => {
 
           <div className={styles.Projects}>
             {sort.byDate(filteredProjects).map((project, index) => (
-              <Card {...project} key={index} />
+              <Card 
+                setTechnology={setTechnologies}
+                {...project} 
+                key={index} 
+              />
             ))}
           </div>
         </div>
