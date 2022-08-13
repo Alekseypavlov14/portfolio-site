@@ -38,6 +38,10 @@ const Home: FC<HomeProps> = () => {
     setFilteredProjects(query.sort(projects, technologies))
   }, [technologies, projects])
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [technologies])
+
   const options = sort
     .inAlphabet(getTechnologies(projects))
     .map(technology => ({

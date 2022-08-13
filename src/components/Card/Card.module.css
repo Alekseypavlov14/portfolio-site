@@ -103,6 +103,10 @@
   background: var(--light-neutral);
 }
 
+.Technology {
+  cursor: pointer;
+}
+
 .Technology::before {
   content: '#';
 }
