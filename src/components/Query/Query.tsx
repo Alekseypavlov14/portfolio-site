@@ -12,11 +12,13 @@ interface Option {
 }
 
 interface QueryProps {
+  value: Option[]
   options: Option[]
   setTechnologies: Dispatch<SetStateAction<string[]>>
 }
 
 const Query: FC<QueryProps> = ({ 
+  value,
   options, 
   setTechnologies
 }) => {
@@ -29,6 +31,7 @@ const Query: FC<QueryProps> = ({
         classNamePrefix={'select__' + theme}
         placeholder='Select tools...'
         options={options}
+        value={value}
         isMulti
       />
     </div>

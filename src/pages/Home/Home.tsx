@@ -45,10 +45,17 @@ const Home: FC<HomeProps> = () => {
       label: technology,
     }))
 
+  const value = technologies
+    .map(technology => ({
+      value: technology,
+      label: technology,
+    }))
+
   return (
     <div className={cn(element.Page, element[theme], styles[theme])}>
       <div className={element.Container}>
         <Query
+          value={value}
           options={options}
           setTechnologies={setTechnologies}
         />
