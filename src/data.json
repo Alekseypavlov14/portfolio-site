@@ -1,0 +1,109 @@
+{
+  "projects": [
+    {
+      "name": "Portfolio",
+      "description": "The project I created as a portfolio site. It has links to all my other works. The project has a lot of nice details like different themes, project sorting and other",
+      "technologies": ["React", "Redux", "TypeScript", "CSS"],
+      "link": "http://aleksey-pavlov.netlify.app",
+      "repository": "https://www.github.com/Alekseypavlov14/portfolio-site",
+      "date": "23.05.22"
+    },
+    {
+      "name": "UMR Group App",
+      "description": "The web application is for UMR Business Group. I realized the form with counting the price which depends on options, the date and the time. Also, there is a possibility of adding feedbacks.",
+      "technologies": ["Next", "Redux", "TypeScript", "CSS"],
+      "link": "http://umr-group.netlify.app",
+      "repository": "https://www.github.com/Alekseypavlov14/umr-group-next",
+      "date": "07.07.22"
+    },
+    {
+      "name": "Responsive site",
+      "description": "Responsive HTML layout portfolio of a man. Here I used Webpack to compile SASS.",
+      "technologies": ["Webpack", "SASS", "HTML"],
+      "repository": "https://github.com/Alekseypavlov14/responsive-html-layout/",
+      "link": "https://responsive-html-layout.netlify.app",
+      "date": "02.03.22"
+    },
+    {
+      "name": "swipe-mobile",
+      "description": "NPM package for handling swipes on mobile devices. It allows you to handle the callback for the swipe direction",
+      "technologies": ["Webpack", "TypeScript"],
+      "link": "https://www.npmjs.com/package/swipe-mobile",
+      "repository": "https://github.com/Alekseypavlov14/swipe-mobile",
+      "date": "04.05.22"
+    },
+    {
+      "name": "A+ Studio",
+      "description": "The adaptive site design. It was written to practice developing sites without UI libraries",
+      "technologies": ["HTML", "CSS", "JS"],
+      "link": "https://a-studio-adaptive.netlify.app/",
+      "repository": "https://www.github.com/Alekseypavlov14/A-Studio-adaptive-",
+      "date": "01.03.22"
+    },
+    {
+      "name": "DSI Technology",
+      "description": "It is an example of basic adaptive html layout. Gulp and SASS were used. My first application where Gulp was used",
+      "technologies": ["HTML", "SASS", "Gulp"],
+      "link": "http://dsi-it.netlify.app",
+      "repository": "https://www.github.com/Alekseypavlov14/html-layout",
+      "date": "26.05.22"
+    },
+    {
+      "name": "Go Corona",
+      "description": "The adaptive website about coronavirus. In site, I created beautiful menu burger",
+      "technologies": ["HTML", "SASS", "Webpack"],
+      "link": "https://health-corona-go.netlify.app",
+      "repository": "https://www.github.com/Alekseypavlov14/go-corona",
+      "date": "12.06.22"
+    },
+    {
+      "name": "Cattia Business Center",
+      "description": "The site is for CATTIA Business Canter in Brasov, Romania. I used swiper.js to create a carousel of the photos. The practice of standart site developing",
+      "technologies": ["React", "Redux", "TypeScript", "CSS"],
+      "link": "https://cattia-business-center.netlify.app/",
+      "repository": "https://www.github.com/Alekseypavlov14/cattia-business-center",
+      "date": "25.07.22"
+    },
+    {
+      "name": "Papa Grill Landing",
+      "description": "This site is a landing of the company. It helps to open and manage restaurants, allows you to use their name for having clients. Generally, you get restaurant and part of profit, they get new restaurant to the collection and also a part of profit",
+      "technologies": ["HTML", "CSS", "JS"],
+      "link": "https://papa-grill.netlify.app",
+      "repository": "https://github.com/Alekseypavlov14/papa-grill",
+      "date": "26.08.22"
+    },
+    {
+      "name": "Homework tracker",
+      "description": "The application which helps you to track and check your hometasks, look after them. You can add courses, add tasks in some courses then do them and mark it.",
+      "technologies": ["React", "Redux", "TypeScript", "CSS"],
+      "link": "https://homework-tracker.netlify.app",
+      "repository": "https://github.com/Alekseypavlov14/homework-tracker",
+      "date": "14.09.22"
+    },
+    {
+      "name": "Target Tracker",
+      "description": "This application helps you to achieve goals! You can add topics and then take challenge on. Also, there is a possibility to write description for a target. The targets are filtered by period (week, month or year) so you are able to take different goals on at the same time",
+      "technologies": ["React", "Redux", "TypeScript", "SASS"],
+      "link": "https://targets-tracker.netlify.app/",
+      "repository": "https://github.com/Alekseypavlov14/target-tracker",
+      "date": "28.10.22"
+    }
+  ],
+  "contacts": [
+    {
+      "media": "Google",
+      "contact": "aleshapavlov9@gmail.com",
+      "reference": "mailto://aleshapavlov9@gmail.com"
+    },
+    {
+      "media": "Telegram",
+      "contact": "@aleshapavlov14",
+      "reference": "https://telegram.me/aleshapavlov14"
+    },
+    {
+      "media": "GitHub",
+      "contact": "Alekseypavlov14",
+      "reference": "https://github.com/Alekseypavlov14"
+    }
+  ]
+}

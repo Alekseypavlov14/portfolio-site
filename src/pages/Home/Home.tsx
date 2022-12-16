@@ -7,11 +7,12 @@ import { themeSelector } from '../../features/theme/themeSlice'
 import { useSelector } from 'react-redux'
 // utils
 import { getTechnologies } from '../../utils/GetTechnologies'
-import { APIRequest } from '../../utils/APIRequest'
 import { query } from '../../utils/Query'
 import { sort } from '../../utils/Sort'
 // types
 import { IProject } from '../../types/Project.interface'
+// data
+import data from './../../data.json'
 // styles
 import styles from './Home.module.css'
 import element from './../../styles/Element.module.css'
@@ -22,28 +23,19 @@ interface HomeProps {}
 const Home: FC<HomeProps> = () => {
   const theme = useSelector(themeSelector)
 
-  const [loading, setLoading] = useState(false)
-  const [projects, setProjects] = useState<IProject[]>([])
   const [filteredProjects, setFilteredProjects] = useState<IProject[]>([])
   const [technologies, setTechnologies] = useState<string[]>([])
 
   useEffect(() => {
-    setLoading(true)
-    APIRequest('/projects')
-      .then(data => setProjects(data.projects))
-      .then(() => setLoading(false))
-  }, [])
-
-  useEffect(() => {
-    setFilteredProjects(query.sort(projects, technologies))
-  }, [technologies, projects])
+    setFilteredProjects(query.sort(data.projects, technologies))
+  }, [technologies])
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [technologies])
 
   const options = sort
-    .inAlphabet(getTechnologies(projects))
+    .inAlphabet(getTechnologies(data.projects))
     .map(technology => ({
       value: technology,
       label: technology,
@@ -65,8 +57,6 @@ const Home: FC<HomeProps> = () => {
         />
 
         <div className={styles.SearchResult}>
-          {loading && <div className={styles.Loading}>loading ...</div>}
-  
           {technologies.length !== 0 && (
             <div className={styles.ResultAmount}>
               {filteredProjects.length === 1
