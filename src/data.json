@@ -87,6 +87,14 @@
       "link": "https://targets-tracker.netlify.app/",
       "repository": "https://github.com/Alekseypavlov14/target-tracker",
       "date": "28.10.22"
+    },
+    {
+      "name": "Training Tracker",
+      "description": "The application helps you to plan your trainings more effectively! Here you can push trainings to today list and then check the calendar. There you will be able to check which exercises you did each day, how often you do them and so on. Then it will help you to normalize your schedule and you will not need to keep all it in your mind!",
+      "technologies": ["React", "Redux", "TypeScript", "CSS"],
+      "link": "http://trainings-tracker.netlify.app",
+      "repository": "https://github.com/Alekseypavlov14/trainings",
+      "date": "02.01.23"
     }
   ],
   "contacts": [
